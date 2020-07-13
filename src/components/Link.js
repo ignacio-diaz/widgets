@@ -4,6 +4,7 @@ const Link = ({ className, href, children }) => {
   
   const onClick = (event) => {
     event.preventDefault();
+    console.log("hola");
   }; 
   
   return (
