@@ -24,7 +24,8 @@ const Search = () => {
 
     };
 
-    if (term && !results.length) {
+    const newLocal = !results.length;
+    if (term && newLocal) {
       search();
     } else {
       const timeoutId = setTimeout(() => {
